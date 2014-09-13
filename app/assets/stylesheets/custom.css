@@ -1,0 +1,13 @@
+#map-wrap {
+    padding-left: 130px;
+}
+
+.heading {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 50px;
+    text-align: center;
+}
+
+#search-bar {
+    text-align: center;
+}

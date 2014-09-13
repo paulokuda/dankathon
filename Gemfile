@@ -35,6 +35,9 @@ end
 
 gem 'geocoder'
 gem 'gmaps4rails'
+gem 'bcrypt-ruby', '3.1.5'
+# Use simple_form to clean up form views
+gem 'simple_form'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'

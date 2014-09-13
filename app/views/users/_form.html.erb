@@ -1,0 +1,21 @@
+
+
+
+<%= simple_form_for(@user) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    
+    <%= f.input :username %>
+    <%= f.input :password %>
+    <%= f.input :password_confirmation %>
+
+    
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit, class: "button tiny radius" %>
+    <%= link_to 'Cancel', users_path, class: "button tiny radius" %>
+    
+  </div>
+<% end %>
