@@ -4,11 +4,18 @@ class ItemsController < ApplicationController
   # GET /items
   # GET /items.json
   def index
-    @items = Item.all
+    @items = Item.search(params[:search])
+    # @items = Item.all
+    @hash = Gmaps4rails.build_markers(@items) do |item, marker|
+      marker.lat item.latitude
+      marker.lng item.longitude
+      marker.infowindow item.description
+    end
   end
 
   # GET /items/1
   # GET /items/1.json
+
   def show
   end
 
