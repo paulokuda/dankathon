@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading">WHAT THE HELL DO YOU WANT?</h1>
+<h1 class="heading">WHAT ON EARTH DO YOU WANT?</h1>
 <div id="search-bar">
   <%= form_tag items_path, :method => 'get' do %>  
     <p>
@@ -56,14 +56,15 @@
       </tr>
     <% end %>
   </tbody>
-</table> -->
+</table>
 
+<br> -->
 <br>
 
-<%= link_to 'New Item', new_item_path %>
+
 
 <div id="map-wrap" style='width: 800px;'>
-  <center><div id="map" style='width: 1000px; height: 500px;'></div></center>
+  <center><div id="map" style='width: 1000px; height: 470px;'></div></center>
 </div>
 
 <script type="text/javascript">
@@ -74,3 +75,5 @@ handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
   handler.fitMapToBounds();
 });
 </script>
+
+<div class="align-right"><%= link_to 'New Item', new_item_path %></div>
