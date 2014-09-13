@@ -2,12 +2,18 @@ Hackathon::Application.routes.draw do
   resources :users
 
   resources :items
-
+  resources :sessions, :only => [:create]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
   root 'items#index'
+  get 'home', to: 'items#index', as: :home
+  get 'login' => 'sessions#new', :as => :login
+  get 'logout' => 'sessions#destroy', :as => :logout
+  get 'signup' => 'users#new', :as => :signup
+
+  
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
