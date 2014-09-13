@@ -4,10 +4,43 @@
 
 .heading {
     font-family: 'Fjalla One', sans-serif;
-    font-size: 50px;
+    font-size: 55px;
     text-align: center;
 }
 
 #search-bar {
     text-align: center;
 }
+
+.box {
+    width: 500px;
+    height: 30px;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 20px;
+    display: inline-block;
+}
+
+
+.search-button {
+  background-color:#000000;
+ 
+ 
+  /*display:inline-block;*/
+
+  color:#ffffff;
+  font-family: 'Fjalla One', sans-serif;
+  font-size:14px;
+ /* padding:5px 20px;*/
+  width: 100px;
+  height: 34px;
+
+
+
+}
+.search-button:hover {
+  background-color:#ffffff;
+  color:#000000;
+}
+
+
+
